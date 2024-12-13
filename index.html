@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=BIZ+UDPMincho&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=BIZ+UDPMincho&family=Gothic+A1&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=BIZ+UDPMincho&family=Domine:wght@400..700&family=Gothic+A1&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=BIZ+UDPMincho&family=Domine:wght@400..700&family=Gothic+A1&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=BIZ+UDPMincho&family=Domine:wght@400..700&family=Gothic+A1&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+  <nav>
+    <h2 id="logo" class="font-aby">Nature</h2>
+
+    <div id="links">
+      <a href="#" class="font-udp">Home</a>
+      <a href="#" class="font-udp">Portfolio</a>
+      <a href="#" class="font-udp">About</a>
+      <a href="#" class="font-udp">Contact</a>
+    </div>
+
+    <div id="hamburger">
+      <button id="hamburgerTrigger" onclick="hamburgerToggle()">
+        <svg id="hamburgerIcon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5 7H19M5 12H19M5 17H19" stroke="#000000" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round"></path>
+        </svg>
+      </button>
+
+      <div id="hamburgerItems" class="hamburgerHidden">
+        <a href="#" class="font-udp">Home</a>
+        <a href="#" class="font-udp">Portfolio</a>
+        <a href="#" class="font-udp">About</a>
+        <a href="#" class="font-udp">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <hr>
+
+  <h1 id="hero-text" class="font-udp">
+    Welcome to My Nature-Inspired Portfolio
+  </h1>
+
+  <img src="assets/hero-image.png" id="hero-image"
+    alt="Lush greenery and assorted plants thrive in a sunlit environment with warm wooden textures.">
+
+  <div id="gallery">
+    <div class="gridCol">
+      <div class="project">
+        <img src="assets/forest-retreat.png"
+          alt="A serene forest landscape with tall trees, sunlight filtering through leaves, and a carpet of soft, mossy ground.">
+        <h3 class="project-title font-gothic">Forest Retreat</h3>
+        <p class="project-field font-gothic">Web Design</p>
+      </div>
+
+      <div class="project">
+        <img src="assets/mountain-escape.png"
+          alt="A panoramic view of majestic mountains surrounded by lush greenery under a bright blue sky.">
+        <h3 class="project-title font-gothic">Mountain Escape</h3>
+        <p class="project-field font-gothic">Graphic Design</p>
+      </div>
+
+      <div class="project">
+        <img src="assets/ocean-breeze.png"
+          alt="A tranquil beach with soft waves lapping against a sandy shore and green palm trees swaying in the breeze.">
+        <h3 class="project-title font-gothic">Ocean Breeze</h3>
+        <p class="project-field font-gothic">Photography</p>
+      </div>
+    </div>
+
+    <div class="gridCol">
+      <div class="project">
+        <img src="assets/desert-oasis.png"
+          alt="A tranquil oasis with swaying palm trees surrounded by soft, golden sand dunes beneath a clear blue sky..">
+        <h3 class="project-title font-gothic">Desert Oasis</h3>
+        <p class="project-field font-gothic">Illustration</p>
+      </div>
+
+      <div class="project">
+        <img src="assets/urban-jungle.png"
+          alt="A vibrant cityscape with tall buildings interspersed with green trees and plants, creating a harmonious blend of nature and urban life.">
+        <h3 class="project-title font-gothic">Urban Jungle</h3>
+        <p class="project-field font-gothic">Branding</p>
+      </div>
+
+      <div class="project">
+        <img src="assets/countryside-scenery.png"
+          alt="A picturesque rural landscape featuring rolling green hills under a bright blue sky with fluffy white clouds.">
+        <h3 class="project-title font-gothic">Countryside Scenery</h3>
+        <p class="project-field font-gothic">Animation</p>
+      </div>
+    </div>
+
+    <div class="gridCol">
+      <div id="finalGridCol">
+        <div class="project">
+          <img src="assets/tropical-paradise.png"
+            alt="A scenic tropical beach with white sand, clear turquoise water, and tall palm trees swaying gently in a bright blue sky.">
+          <h3 class="project-title font-gothic">Tropical Paradise</h3>
+          <p class="project-field font-gothic">UI/UX</p>
+        </div>
+
+        <div class="project">
+          <img src="assets/winter-wonderland.png"
+            alt="A tranquil winter landscape featuring tall pine trees covered in fresh snow with a bright blue sky above.">
+          <h3 class="project-title font-gothic">Winter Wonderland</h3>
+          <p class="project-field font-gothic">Video Production</p>
+        </div>
+      </div>
+
+      <div class="project">
+        <img src="assets/spring-blossom.png"
+          alt="A vibrant scene of blooming flowers in shades of pink and yellow surrounded by fresh green leaves under a clear blue sky.">
+        <h3 class="project-title font-gothic">Spring Blossom</h3>
+        <p class="project-field font-gothic">App Development</p>
+      </div>
+    </div>
+  </div>
+
+  <h2 id="subhero-text" class="font-udp">
+    I am a nature-inspired designer with a passion for blending organic elements with modern aesthetics. My work is a
+    reflection of the beauty and tranquility found in natural landscapes.
+  </h2>
+
+  <div id="contact">
+    <h3 class="font-udp" id="contact-title">Contact Me</h3>
+    <p class="font-gothic" id="contact-description">I would love to hear from you! Whether you have a project in mind or
+      just want to chat about
+      design, feel free to reach out.</p>
+  </div>
+
+  <div id="contact-form-container">
+    <h3 class="font-domine" id="contact-title">Get in Touch</h3>
+
+    <form id="contact-form">
+      <div id="name-inputs">
+        <input type="text" placeholder="First name" class="font-jakarta" required>
+        <input type="text" placeholder="Last name" class="font-jakarta" required>
+      </div>
+      <input type="email" placeholder="Email" class="font-jakarta" required>
+      <textarea placeholder="Placeholder" form="contact-form" class="font-jakarta"></textarea>
+      <input type="submit" class="font-jakarta">
+    </form>
+  </div>
+
+  <hr>
+
+  <footer>
+    <h3 class="font-udp" id="footer-trademark">2023 Nature Portfolio</h3>
+
+    <button id="contact-cta" class="font-roboto">
+      Contact
+    </button>
+  </footer>
+
+  <script>
+    function hamburgerToggle() {
+      hamburger = document.getElementById("hamburgerItems")
+      if (hamburger.classList.contains("hamburgerHidden")) {
+        hamburger.classList.remove("hamburgerHidden")
+        hamburger.classList.add("hamburgerVisible")
+      }
+      else if (hamburger.classList.contains("hamburgerVisible")) {
+        hamburger.classList.remove("hamburgerVisible")
+        hamburger.classList.add("hamburgerHidden")
+      }
+    } 
+  </script>
+</body>
+
+</html>
